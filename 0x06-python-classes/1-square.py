@@ -1,10 +1,17 @@
 #!/usr/bin/python3
-class Square:
-    """class Square that defines a square by: (based on 0-square.py)
-       -Private instance attribute: size
-       -Instantiation with size (no type/value verification)
-       -You are not allowed to import any module """
+"""
+This module defines a Square class
+"""
 
-    def __init__(self, size):
-        """ Class Constructor"""
+
+class Square:
+    """Class that defines a square.
+    Attributes:
+         size (str): Size of the Square
+     """
+    def __init__(self, size=0):
+        """Initializer function for a Square.
+        Args:
+            size (int): Size of the Square.
+        """
         self.__size = size
